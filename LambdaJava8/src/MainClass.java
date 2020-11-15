@@ -35,7 +35,7 @@ public class MainClass {
 		long validUsersCount=details.filter((userDetails)->userDetails.getId().equals(userDetails.getId())).count();
 		System.out.println("valid users"+validUsersCount);
 		
-		System.out.println("List size"+list.size());
+		System.out.println("List size: "+list.size());
 
 	}
 
