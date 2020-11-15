@@ -11,6 +11,7 @@ public class Main {
 		System.out.println(print(10));
 		System.out.println(print("101"));
 		System.out.println(print("1001"));
+		System.out.println(print("10101"));
 	}
 
   
