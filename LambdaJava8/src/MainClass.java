@@ -11,6 +11,7 @@ public class MainClass {
 		// Java8 Stream API
 		
 		//List<UserDetails> list=new ArrayList<>();
+		System.out.println("Start........");
 		Random rd=new Random();
 		List<UserDetails> list=Arrays.asList(new UserDetails(rd.ints(3).findAny().orElse(10)+"","username-"+rd.ints(1).findFirst().orElse(20),rd.nextBoolean()),
 				new UserDetails(rd.ints(3).findAny().orElse(10)+"","username-"+rd.ints(1).findFirst().orElse(20),rd.nextBoolean()),
