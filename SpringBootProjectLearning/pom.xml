@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.1.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.springTesting</groupId>
+	<artifactId>DemoSpringProjectLearning</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>DemoSpringProjectLearning</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<junit.jupiter.version>5.4.0</junit.jupiter.version>
+	</properties>
+
+	<dependencies>
+	
+	<!-- Basic dependencies needed for creating web project web, jpa, sql-connector -->
+	
+	    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.21</version>
+		</dependency>
+	
+		<!-- <dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+		</dependency> -->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>2.3.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!--   test dependency -->
+		<!--  this is junit jupiter Api "ref:edureka" -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>${junit.jupiter.version}</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!--  this is junit jupiter platform "ref: edureka"-->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-engine</artifactId>
+		    <version>${junit.jupiter.version}</version>
+		    <scope>test</scope>
+		</dependency>
+		<!--    test dependency   -->
+		
+	</dependencies>
+	
+	<!-- Adding swagger dependency -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<!-- surefire plugin used for running test using mvn AS: "maven clean build test or maven test" -->
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+	       		 <version>3.0.0-M5</version>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
