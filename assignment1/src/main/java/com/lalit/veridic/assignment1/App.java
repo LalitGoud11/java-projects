@@ -14,6 +14,7 @@ public class App
 	
     public static void main( String[] args ) 
     {
+    	System.out.println("Starting......");
     	String name;
     	int id;
     	int option;
