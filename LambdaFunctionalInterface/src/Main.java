@@ -47,7 +47,7 @@ public class Main
         System.out.println("Supplier result  " + suplier.get());
         final Function<Student, String> functionInterfaceGetName = (Function<Student, String>)(student -> student.getName());
         final Function<Student, Integer> functionInterfaceGetMarks = (Function<Student, Integer>)(student -> student.getMarks());
-        System.out.println("----------------->" + functionInterfaceGetMarks.apply(studentList.get(0)));
+        System.out.println("--------------->" + functionInterfaceGetMarks.apply(studentList.get(0)));
         System.out.println("Marks: " + getStudentInfo(functionInterfaceGetMarks, studentList.get(0)) + ",Name: ");
         System.out.println(getStudentInfo(functionInterfaceGetName, studentList.get(0)));
         final BiFunction<String, Integer, String> bifun = (BiFunction<String, Integer, String>)((string, integer) -> String.valueOf(string) + " age is, " + integer);
