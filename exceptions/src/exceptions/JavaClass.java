@@ -55,7 +55,6 @@ public class JavaClass  {
 		return l;
 	}
 	
-	
 	private void addValues() {
 		list.add(9);
 		list.add(2);
