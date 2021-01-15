@@ -7,6 +7,7 @@ public class JavaClass  {
 
 	List<Integer> list = new ArrayList<>();
 	boolean x=false;
+	
 	//int index=-1;
 	public List<Integer> run1() throws CustomExceptions {
 		addValues();
