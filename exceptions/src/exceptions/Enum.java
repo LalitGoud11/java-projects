@@ -13,5 +13,4 @@ enum Enum {
 	public String getColour() {
 		return colour;
 	}
-
 }
